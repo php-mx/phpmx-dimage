@@ -1,4 +1,4 @@
-# DImage - PHPMX
+# PHPMX - DImage
 
 Ferramenta para manipulação e edição de imagens usando a biblioteca GD.
 
