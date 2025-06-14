@@ -1,14 +1,21 @@
 {
+    "name": "phpmx/dimage",
+    "description": "Ferramenta pra edição de imagens PHPMX",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "André Ricardo",
+            "email": "contatoadmx@gmail.com"
+        }
+    ],
     "minimum-stability": "dev",
-    "require": {
-        "phpmx/core": "dev-main"
-    },
     "autoload": {
         "psr-4": {
             "": "source/"
-        },
-        "files": [
-            "helper/script/path.php"
-        ]
+        }
+    },
+    "require": {
+        "ext-gd": "*",
+        "phpmx/core": "dev-main"
     }
 }
