@@ -65,7 +65,7 @@ trait DImageEdit
         return $this;
     }
 
-    /** Redimenciona a imagem respeitando a proporção */
+    /** Redimensiona a imagem respeitando a proporção */
     function resize(int|array $size): static
     {
         if (is_int($size) && $size < 0) {
@@ -78,7 +78,7 @@ trait DImageEdit
         return $this;
     }
 
-    /** Redimenciona a imagem não respeitando a proporção */
+    /** Redimensiona a imagem não respeitando a proporção */
     function resizeFree(int|array $size): static
     {
         $this->ensureResizeArray($size);

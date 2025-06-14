@@ -92,7 +92,7 @@ trait DImageGet
         return $bin;
     }
 
-    /** Retorna a imagem codificada em base64*/
+    /** Retorna a imagem codificada em base64 */
     function getB64(): string
     {
         $type = Mime::getMimeEx($this->getExtension());
