@@ -12,7 +12,8 @@
     "autoload": {
         "psr-4": {
             "": "source/"
-        }
+        },
+        "files": []
     },
     "require": {
         "ext-gd": "*",
