@@ -144,10 +144,3 @@ Para capturar informações da imagem utilize os metodos abaixo
 ## Considerações
 
 Embora bem otimizada, a edição de imagens requer mais memoria do que normalmente o PHP usa para requisições. Cuidado com edição de muitiplos arquivos simultaneamente ou armazenamento de conteúdo gerado por **getBin** e **getB64**
-
-````
-
-```
-
-```
-````
