@@ -13,7 +13,9 @@
         "psr-4": {
             "": "source/"
         },
-        "files": []
+        "files": [
+            "helper/script/path.php"
+        ]
     },
     "require": {
         "ext-gd": "*",
