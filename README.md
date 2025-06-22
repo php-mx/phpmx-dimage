@@ -144,3 +144,7 @@ Para capturar informações da imagem utilize os metodos abaixo
 ## Considerações
 
 Embora bem otimizada, a edição de imagens requer mais memoria do que normalmente o PHP usa para requisições. Cuidado com edição de muitiplos arquivos simultaneamente ou armazenamento de conteúdo gerado por **getBin** e **getB64**
+
+---
+
+[phpmx](https://github.com/php-mx) | [phpmx-core](https://github.com/php-mx/phpmx-core) | [phpmx-server](https://github.com/php-mx/phpmx-server) | [phpmx-datalayer](https://github.com/php-mx/phpmx-datalayer) | [phpmx-view](https://github.com/php-mx/phpmx-view)
