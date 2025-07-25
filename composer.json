@@ -1,6 +1,6 @@
 {
     "name": "phpmx/dimage",
-    "description": "Ferramenta pra edição de imagens phpMX",
+    "description": "Ferramenta de manipulação de imagens para aplicações PHPMX",
     "license": "MIT",
     "authors": [
         {
