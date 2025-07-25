@@ -1,6 +1,6 @@
 {
     "name": "phpmx/dimage",
-    "description": "Ferramenta pra edição de imagens PHPMX",
+    "description": "Ferramenta pra edição de imagens phpMX",
     "license": "MIT",
     "authors": [
         {
@@ -8,17 +8,15 @@
             "email": "contatoadmx@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "": "source/"
-        },
-        "files": [
-            "helper/script/path.php"
-        ]
+            "": "class/"
+        }
     },
     "require": {
         "ext-gd": "*",
         "ext-exif": "*",
-        "phpmx/core": "^1.0"
+        "phpmx/core": "dev-main"
     }
 }
