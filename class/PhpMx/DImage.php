@@ -10,6 +10,7 @@ use PhpMx\Dimage\DImageGet;
 use PhpMx\Dimage\DImageSet;
 use PhpMx\Dimage\DImageUse;
 
+/** Classe principal para manipulação de imagens com suporte a múltiplos formatos. */
 class DImage
 {
     use DImageEdit;

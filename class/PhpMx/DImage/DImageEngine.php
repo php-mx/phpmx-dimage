@@ -4,7 +4,6 @@ namespace PhpMx\Dimage;
 
 trait DImageEngine
 {
-    /** Converte uma string de cor RGB em uma string de cor Hexadecimal */
     protected static function colorHex(string $color): string
     {
         if (strpos($color, ',') === false) {
@@ -19,7 +18,6 @@ trait DImageEngine
         return str_pad(dechex($r), 2, 0) . str_pad(dechex($g), 2, 0) . str_pad(dechex($b), 2, 0);
     }
 
-    /** Converte uma string de cor Hexadecimal em uma string de cor RGB */
     protected static function colorRGB(string $color): string
     {
         if (count(explode(',', $color)) == 3) {
@@ -47,7 +45,6 @@ trait DImageEngine
         return implode(',', $c);
     }
 
-    /** Garante que uma variavel tenha um array de redimencionamento */
     protected function ensureResizeArray(int|array &$size): void
     {
         list($width, $height) = $this->size;
@@ -66,7 +63,6 @@ trait DImageEngine
         }
     }
 
-    /** Calcula valores para uma dimensão estipulando um valor maximo */
     protected function calcSizeMax(int|array $size): array
     {
         $this->ensureResizeArray($size);
@@ -86,10 +82,6 @@ trait DImageEngine
         return [$width, $height];
     }
 
-    /**
-     * Calcula valores para uma dimensão estipulando um valor minio
-     * @param int|int[] $size Tamanho desejado
-     */
     protected function calcSizeMin(int|array $size): array
     {
         list($width, $height) = $this->size;
@@ -107,12 +99,6 @@ trait DImageEngine
         return [$width, $height];
     }
 
-    /**
-     * Calcula coordenadas de uma posição na imagem
-     * @param int $position <b>(0~8)</b>
-     * @param int $dx Dimensão do enquadramento horizontal
-     * @param int $dy Dimensão do enquadramento vertical
-     */
     protected function calcPosition(int|array $position, int $dx = 0, int $dy = 0): array
     {
         if (is_array($position)) {
@@ -138,7 +124,6 @@ trait DImageEngine
         return [$x, $y];
     }
 
-    /** Normaliza uma variavel de cores */
     protected static function normalizeColor(string|array $color): array
     {
         if (!is_array($color)) {
@@ -153,7 +138,6 @@ trait DImageEngine
         return $color;
     }
 
-    /** Normaliza entradas de tamanho */
     protected static function normalizeSize(int|array $size): array
     {
         $size = is_array($size) ? $size : [$size];
