@@ -21,7 +21,7 @@ class DImage
 
     function __destruct()
     {
-        imagedestroy($this->gd);
+        unset($this->gd);
     }
 
     function __toString()
@@ -265,7 +265,6 @@ class DImage
     /** Adiciona uma imagem DImage em uma posição da imagem atual */
     function stamp(DImage $imgSpamt, int $position = 0): static
     {
-        #Capturando imagem
         $imgSpamt->resize(min(...$this->size));
         $stamp = $imgSpamt->getGd();
         imageAlphaBlending($stamp, true);

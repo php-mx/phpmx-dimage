@@ -1,24 +1,25 @@
 {
-    "name": "phpmx/dimage",
-    "description": "Ferramenta de manipulação de imagens para aplicações PHPMX",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "André Ricardo",
-            "email": "contatoadmx@gmail.com"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "": "class/"
-        },
-        "files": [
-            "system/helper/script/path.php"
-        ]
-    },
-    "require": {
-        "ext-gd": "*",
-        "ext-exif": "*",
-        "phpmx/core": "^2.0"
+  "name": "phpmx/dimage",
+  "description": "Ferramenta de manipulação de imagens para aplicações PHPMX",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "André Ricardo",
+      "email": "contatoadmx@gmail.com"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "": "class/"
+    },
+    "files": [
+      "system/helper/script/path.php"
+    ]
+  },
+  "require": {
+    "ext-gd": "*",
+    "ext-exif": "*",
+    "phpmx/core": "dev-main"
+  }
 }
