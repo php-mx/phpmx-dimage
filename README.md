@@ -1,8 +1,6 @@
 # PHPMX DIMAGE
 
-Ferramenta de manipulação de imagens para aplicações PHPMX. Suporte a redimensionamento, rotação e compressão.
-
-## Instalação
+Ferramenta de manipulação de imagens para aplicações PHPMX
 
 ```bash
 composer require phpmx/dimage

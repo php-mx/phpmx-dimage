@@ -3,6 +3,7 @@
     "description": "Ferramenta de manipulação de imagens para aplicações PHPMX",
     "license": "MIT",
     "minimum-stability": "dev",
+    "version": "3",
     "authors": [
         {
             "name": "André Ricardo",
