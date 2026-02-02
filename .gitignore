@@ -1,4 +1,3 @@
-/mx
 /.conf
 /composer.lock
 
@@ -7,4 +6,5 @@
 /.env
 /vendor
 /library/cache
-/library/certificate
+/library/certificate/*
+!/library/certificate/base.crt
