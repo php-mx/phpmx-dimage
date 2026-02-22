@@ -24,6 +24,13 @@ class DImage
     protected string $path = '.';
 
     /** @ignore */
+    protected function __construct()
+    {
+        phpex('gd');
+        phpex('exif');
+    }
+
+    /** @ignore */
     function __destruct()
     {
         unset($this->gd);
