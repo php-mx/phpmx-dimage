@@ -1,5 +1,6 @@
 /.conf
 /composer.lock
+/mx
 
 # MX-CORE
 
